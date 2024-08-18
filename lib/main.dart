@@ -23,12 +23,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => MyHomePage(
               title: 'Ns',
             ),
-        // '/': (context) => Ap(),
-        // '/': (context) => Frm(title: 'Stark',)
-        // '/': (context) => CustomPaint(),
-        // '/': (context) => Container(height: 400,color:Colors.grey,child: HSView(),)
-        // '/' : (context) => TapToScroll(),
-        //'/' : (context) => Phase1(10,10,true),
+        // '/': (context) => GridViewExample(),
       },
     );
   }

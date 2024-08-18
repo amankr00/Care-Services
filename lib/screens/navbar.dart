@@ -23,7 +23,7 @@ class Navbar extends StatelessWidget {
               // color : Color(0xff603F8B),
               alignment: Alignment.center,
               child: Text(
-                'Khushi Care & Services',
+                'Khushboo Care & Services',
                 style: TextStyle(
                     color: const Color.fromARGB(255, 0, 0, 0),
                     fontFamily: 'Roboto',

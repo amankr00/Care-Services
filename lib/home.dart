@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:khushboocareservice/screens/offeredServices.dart';
+import 'package:khushboocareservice/screens/workingStaff.dart';
 import 'screens/officeStaff.dart';
 import 'screens/branches.dart';
 import 'screens/pageView.dart';
@@ -18,7 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 247, 218, 227),
+        backgroundColor: Color.fromARGB(255, 0, 0, 0),
         body: SafeArea(
             child: SingleChildScrollView(
           child: Column(
@@ -41,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 alignment: Alignment.topCenter,
-                height: 500,
+                height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 child: Stack(
                   children: [
@@ -50,13 +52,29 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               About(),
-              SizedBox(
-                height: 30,
-              ),
+              
               OfficeStaff(),
+             
+              SizedBox(
+                height: 20,
+              ),
+
+            Text('SERVICES',
+            style: TextStyle(
+            fontFamily: 'Roboto',
+            fontWeight: FontWeight.normal,
+            fontSize: 32,
+            color:Colors.white),
+            ),  
+              SizedBox(
+                height: 20,
+              ),
+            Divider(height: 1,color:Colors.white,),
               SizedBox(
                 height: 60,
               ),
+            Services(),
+            WorkingStaff()
             ],
           ),
         )));
