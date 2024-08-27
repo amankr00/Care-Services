@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 20,
               ),
 
-            Text('SERVICES',
+            Text('SERVICE',
             style: TextStyle(
             fontFamily: 'Roboto',
             fontWeight: FontWeight.normal,
